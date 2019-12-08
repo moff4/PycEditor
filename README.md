@@ -1,10 +1,10 @@
 # PycEditor #
 
-Tool for editing `.pyc` files and Python bytecode in runtime. 
-
 [![Build Status](https://travis-ci.org/moff4/PycEditor.svg?branch=master)](https://travis-ci.org/moff4/PycEditor) 
 
-Example:
+Tool for editing `.pyc` files and Python bytecode in runtime.  
+
+### Example:  
 
 "Some code":
 ```python
