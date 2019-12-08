@@ -2,7 +2,7 @@
 
 Tool for editing `.pyc` files and Python bytecode in runtime. 
 
-[![Build Status](https://travis-ci.org/moff4/PycEditor.svg?branch=master)](https://travis-ci.org/moff4/PycEditor). 
+[![Build Status](https://travis-ci.org/moff4/PycEditor.svg?branch=master)](https://travis-ci.org/moff4/PycEditor) 
 
 Example:
 
