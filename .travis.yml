@@ -4,6 +4,6 @@ python:
   - "3.8"
 os: 
   - linux
-  - osx
-  - windows
+#  - osx
+#  - windows
 script: python -m unittest -v test
