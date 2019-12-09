@@ -24,12 +24,21 @@ class PycFile:
         self._loaded = True
 
     @classmethod
+    def load_from_code(cls, code):
+        self = cls(code.co_filename)
+        self._code = code
+        self.timestamp = int(time.time())
+        self.source_size = 0
+        self._loaded = True
+        return self
+
+    @classmethod
     def load_from_pycode(cls, pycode):
         code = loads(marshal.dumps(pycode))
         self = cls(code.co_filename)
         self._code = code
         self.timestamp = int(time.time())
-        self.source_size = len(code.co_code)  # not real source_size
+        self.source_size = 0
         self._loaded = True
         return self
 
@@ -52,7 +61,7 @@ class PycFile:
         if not self._loaded:
             self._loaded = True
             self.timestamp = int(time.time())
-            self.source_size = len(self._code)  # not real source_size
+            self.source_size = 0
             self.magic_number = importlib._bootstrap_external.MAGIC_NUMBER
 
     def save(self, source_size=None, reset_timestamp=True):

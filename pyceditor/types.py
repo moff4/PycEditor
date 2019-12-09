@@ -43,7 +43,7 @@ class Code:
     co_flags: int
     co_code: bytes
     co_consts: tuple
-    co_names: str
+    co_names: tuple
     co_varnames: tuple
     co_freevars: tuple
     co_cellvars: tuple
